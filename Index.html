@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+<title>File convertor</title> 
+</head>
+<body>
+
+<div class="container">
+
+  <img id="showImg" src="welcome.jpg">
+
+ <div class="button">
+   <div class="upload">
+    <div class="input">
+    <input type="file" onChange="loadFile(event)" name="" accept=".png, .jpg, .jpeg">
+</div>Choose File
+  </div>
+  <!-- <input type="text" class="filename-input" placeholder="File Name"/> -->
+  <input id="name" type="text" placeholder="filename" class="filename">
+</div>
+<button onClick="pdfDown()">Generate PDF</button>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
